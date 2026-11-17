@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    background: #fff4f8;
+    color: #56304d;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    background: #fff8fb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(180, 90, 130, 0.12);
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #d64f8b;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #65445c;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d64f8b;
+}
+
+.talk-btn {
+    text-decoration: none;
+    color: white;
+    background: #d95391;
+
+    padding: 12px 22px;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.talk-btn:hover {
+    background: #b93672;
+}
+
+.home {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 80px 8%;
+
+    position: relative;
+
+    background:
+        radial-gradient(circle at 10% 20%, #ffd2e4 0, transparent 25%),
+        radial-gradient(circle at 90% 80%, #ead5ff 0, transparent 25%),
+        #fff0f6;
+}
+
+.home-image {
+    width: 350px;
+    height: 390px;
+
+    position: relative;
+
+    background: #f8c4d9;
+
+    padding: 15px;
+
+    transform: rotate(-4deg);
+
+    border: 8px solid white;
+
+    box-shadow: 0 15px 35px rgba(150, 70, 110, 0.2);
+}
+
+.home-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.heart {
+    position: absolute;
+
+    color: #d64f8b;
+
+    font-size: 45px;
+}
+
+.heart1 {
+    top: -35px;
+    right: -25px;
+}
+
+.heart2 {
+    bottom: 20px;
+    left: -45px;
+}
+
+.flower {
+    position: absolute;
+
+    bottom: -25px;
+    right: -30px;
+
+    background: #f38bb4;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 30px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.hello {
+    font-size: 24px;
+    color: #bd4b83;
+    font-style: italic;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    color: #663153;
+
+    margin: 10px 0;
+}
+
+.home-content h1 span {
+    color: #d75091;
+}
+
+.home-content h2 {
+    color: #d34d87;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #684e63;
+
+    max-width: 550px;
+}
+
+.buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.main-btn,
+.cv-btn {
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.main-btn {
+    background: #d85391;
+    color: white;
+}
+
+.main-btn:hover {
+    background: #b83973;
+    transform: translateY(-3px);
+}
+
+.cv-btn {
+    color: #c84983;
+
+    border: 2px solid #d85391;
+
+    background: white;
+}
+
+.cv-btn:hover {
+    background: #d85391;
+    color: white;
+}
+
+.doodle {
+    position: absolute;
+
+    right: 5%;
+    top: 150px;
+
+    color: #71375e;
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    transform: rotate(8deg);
+}
+
+.laptop {
+    font-size: 70px;
+    margin-top: 15px;
+}
+
+.skills {
+    padding: 80px 8%;
+
+    background: #fffafb;
+
+    text-align: center;
+}
+
+.skills h1,
+.projects h1,
+.contact h1 {
+    font-size: 45px;
+
+    color: #633456;
+}
+
+.skills h1 span,
+.projects h1 span,
+.contact h1 span {
+    color: #d95191;
+}
+
+.section-subtitle {
+    margin-top: 12px;
+    margin-bottom: 45px;
+
+    color: #8b627f;
+
+    font-size: 18px;
+}
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 150px;
+
+    padding: 25px 15px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 25px rgba(180, 90, 130, 0.15);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) rotate(2deg);
+}
+
+.skill-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: auto;
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+.html {
+    background: #f06b59;
+}
+
+.css {
+    background: #5579e8;
+}
+
+.js {
+    background: #f0c643;
+}
+
+.react {
+    background: #61c8e9;
+}
+
+.git {
+    background: #dd6682;
+}
+
+.skill-card h3 {
+    color: #65445c;
+}
+
+.about {
+    padding: 80px 10%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    background: #fff1f7;
+}
+
+.about-box {
+    max-width: 600px;
+
+    background: #ffd9e7;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 5px 8px 0 #ef9fbd;
+}
+
+.about-box h1 {
+    color: #693557;
+
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    color: #66495e;
+}
+
+.qualities {
+    background: #fff;
+
+    padding: 30px;
+
+    width: 270px;
+
+    box-shadow: 0 10px 25px rgba(180, 90, 130, 0.15);
+
+    transform: rotate(3deg);
+}
+
+.qualities h2 {
+    color: #d34e88;
+
+    margin-bottom: 20px;
+}
+
+.qualities p {
+    margin: 12px 0;
+
+    color: #64475d;
+}
+
+.projects {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: #fff8fb;
+}
+
+.project-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 350px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    box-shadow: 0 10px 30px rgba(180, 90, 130, 0.18);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-picture {
+    height: 190px;
+
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #e986b1, #a98bea);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.project-picture.second {
+    background: linear-gradient(135deg, #a88cf0, #76b8f0);
+}
+
+.project-picture.third {
+    background: linear-gradient(135deg, #ee91bd, #f0b7d3);
+}
+
+.project-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.project-info {
+    padding: 25px;
+}
+
+.project-info h2 {
+    color: #a63f70;
+
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    line-height: 1.6;
+
+    color: #76596d;
+
+    margin-bottom: 20px;
+}
+
+.project-info a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #d65391;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+}
+
+.project-info a:hover {
+    background: #b93672;
+}
+
+.contact {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: #fbdbea;
+}
+
+.contact p {
+    margin: 20px 0;
+
+    color: #704e65;
+
+    font-size: 18px;
+}
+
+.contact-btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #d85391;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+}
+
+.contact-btn:hover {
+    background: #b93672;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 18px 35px;
+    border: 2px solid #d94d91;
+    border-radius: 30px;
+    color: #d94d91;
+    background-color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #d94d91;
+    color: white;
+}
+
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #663153;
+
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .home-image {
+        width: 280px;
+        height: 320px;
+    }
+
+    .description {
+        margin: auto;
+    }
+
+    .btn,
+    .button {
+        white-space: nowrap;
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .doodle {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
